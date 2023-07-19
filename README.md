@@ -15,7 +15,7 @@ Adding api to download the hot papers from hugging face, and rank them based on 
 
 ## Contact
 
-[LinkedIn](www.linkedin.com/in/amit-israeli-aa4a30242)
+[LinkedIn](https://linkedin.com/in/amit-israeli-aa4a30242)
 
 ## License
 
