@@ -1,12 +1,14 @@
 from utills import *
 from glob import glob
 from munch import DefaultMunch
+from tqdm import tqdm
 
 def create_pod_text(args):
     papers_paths = glob(f'{args.pdf_dir_path}/*.pdf')
-    #papers_api = [upload_paper(p) for p in papers_paths]
-    papers_api = ['K9X5YK6vuDXt9YRJbohel','TtV1CSBkRgsRKM3zVu0A4']
-    print('starting')
+    print('uploading papers')
+    papers_api = [upload_paper(p) for p in tqdm(papers_paths)]
+    print(papers_paths, papers_api)
+
     intreduction_text = read_file(args.intreduction_tamplate_path)
     overview_text = create_overview(args.pdf_dir_path,args.overview_tamplate_path,papers_api)
     deepdive_text = create_deep_dive(args.pdf_dir_path,args.deepdive_tamplate_path,papers_api)
@@ -40,12 +42,12 @@ def create_speech_pod(pod_dir):
     #create_speech(intreduction_text,f'{pod_dir}/speech/intreduction.mp3')
 
 args = {
-    'pdf_dir_path': 'papers/19.7',
+    'pdf_dir_path': 'papers/21.7',
     'intreduction_tamplate_path': 'templates/intreduction.txt',
     'overview_tamplate_path': 'templates/overview.txt',
     'deepdive_tamplate_path': 'templates/deepdive.txt',
     'finish_tamplate_path': 'templates/finish.txt',
-    'output_dir': 'pod_episodes/1'
+    'output_dir': 'pod_episodes/2'
 
 }
 args = DefaultMunch.fromDict(args)
