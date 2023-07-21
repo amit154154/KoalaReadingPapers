@@ -27,6 +27,25 @@ def upload_paper(paper_path):
     else:
         return None
 
+def delete_paper(paper_api_key):
+    headers = {
+        'x-api-key': chatpdf_api,
+        'Content-Type': 'application/json',
+    }
+
+    data = {
+        'sources': [paper_api_key],
+    }
+
+    try:
+        response = requests.post(
+            'https://api.chatpdf.com/v1/sources/delete', json=data, headers=headers)
+        response.raise_for_status()
+        return
+    except requests.exceptions.RequestException as error:
+        print('Error:', error)
+        print('Response:', error.response.text)
+
 def ask_paper(paper_api_key,content):
     headers = {
         'x-api-key': chatpdf_api, ##api code
@@ -34,7 +53,7 @@ def ask_paper(paper_api_key,content):
     }
 
     data = {
-        'sourceId': f"cha_{paper_api_key}",
+        'sourceId': paper_api_key,
         'messages': [
             {
                 'role': "user",
