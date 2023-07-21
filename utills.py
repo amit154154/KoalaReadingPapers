@@ -83,7 +83,7 @@ def create_overview(pdf_dir_path,overview_tamplate_path,papers_api):
         overview_text += file.read() + '\n'
 
     pdfs_path = glob(f'{pdf_dir_path}/*.pdf')
-    pdfs_titles = [extract_text_from_pdf(i).split('\n')[0] for i in pdfs_path]
+    pdfs_titles = [i.split('/')[-1].split('.')[0].replace('_',' ') for i in pdfs_path]
 
     chat_text = 'summarize the paper in one short line, it should have also the results they go'
     print('getting overview of the papers')
