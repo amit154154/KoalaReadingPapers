@@ -5,9 +5,15 @@
 
 Welcome to the Koala Reading AI Podcast! This repository contains the code used for summarizing AI papers and converting them into spoken content using text-to-speech technology.
 ## You can Find the podcast in:
-<img src="assets/spotify_logo.png" alt="Koala Reading AI Podcast Logo" width="50" href="https://open.spotify.com/show/0fuZbZipy60VdRpkbIb9y1">
-<img src="assets/youtube_logo.png" alt="Koala Reading AI Podcast Logo" width="60" href="https://www.youtube.com/channel/UCIbCIgJjIWmHyKC0Qc_C6FA">
 
+<div>
+  <a href="https://open.spotify.com/show/0fuZbZipy60VdRpkbIb9y1" style="display: inline-block; margin-right: 20px;">
+    <img src="assets/spotify_logo.png" alt="Spotify" width="150">
+  </a>
+  <a href="https://www.youtube.com/channel/UCIbCIgJjIWmHyKC0Qc_C6FA" style="display: inline-block;">
+    <img src="assets/youtube_logo.png" alt="YouTube" width="150">
+  </a>
+</div>
 
 ## How it works
 
