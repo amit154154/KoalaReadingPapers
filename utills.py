@@ -122,7 +122,7 @@ def create_speech(text,to_path):
 
     set_api_key(elevenlabs_api_key)
     print('generating speech')
-    audio = generate(text=text)
+    audio = generate(text=text) # can change voice to
     print('finish generating speech')
     save(audio, to_path)
     history = History.from_api()

@@ -1,10 +1,13 @@
 # Koala Reading AI Podcast
 
-<img src="assets/podcast_logo.jpeg" alt="Koala Reading AI Podcast Logo" width="200">
+<img src="assets/podcast_logo.jpeg" alt="Koala Reading AI Podcast Logo" width="400">
 
-[Spotiy](https://open.spotify.com/show/0fuZbZipy60VdRpkbIb9y1)
 
 Welcome to the Koala Reading AI Podcast! This repository contains the code used for summarizing AI papers and converting them into spoken content using text-to-speech technology.
+## You can Find the podcast in:
+<img src="assets/spotify_logo.png" alt="Koala Reading AI Podcast Logo" width="50" href="https://open.spotify.com/show/0fuZbZipy60VdRpkbIb9y1">
+<img src="assets/youtube_logo.png" alt="Koala Reading AI Podcast Logo" width="60" href="https://www.youtube.com/channel/UCIbCIgJjIWmHyKC0Qc_C6FA">
+
 
 ## How it works
 
