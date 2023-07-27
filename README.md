@@ -26,7 +26,10 @@ It Uses [elevenlabs](https://elevenlabs.io/) AMAZING speech to text and [ChatPDF
 
 3.create episode discriptions automatically.
 
-3.upload episodes automatically to the podcast.
+4.add posiblity to create the podcast fully localy and free, using open source (Llama 2 , open source text-to-speech models).
+
+5.upload episodes automatically to the podcast.
+
 
 ## License
 
