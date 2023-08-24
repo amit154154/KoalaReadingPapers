@@ -27,6 +27,7 @@ It Uses [elevenlabs](https://elevenlabs.io/) AMAZING speech to text and [ChatPDF
 3.create episode discriptions automatically.
 
 4.add posiblity to create the podcast fully localy and free, using open source (Llama 2 , open source text-to-speech models).
+Update: added option for free tts using [tortoise-tts](https://github.com/neonbjb/tortoise-tts.git), working on summery using llama 2.
 
 5.upload episodes automatically to the podcast.
 

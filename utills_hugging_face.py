@@ -66,7 +66,7 @@ def download_papers(papers_list,dir_output):
             # Check if the response contains PDF content
             if response.headers['Content-Type'] == 'application/pdf':
                 # Save the PDF content to a local file
-                with open(f'{dir_output}/{get_valid_filename(name)}.pdf', 'wb') as file:
+                with open(f'{dir_output}/{get_valid_filename(name)}_{arxiv_id}.pdf', 'wb') as file:
                     file.write(response.content)
             else:
                 print("The provided URL does not point to a PDF file.")
@@ -76,7 +76,9 @@ def download_papers(papers_list,dir_output):
 
 def download_papers_between_dates(to_path,from_date,to_date):
     dates_urls = generate_dates_between(from_date,to_date)
+    print(dates_urls)
     dates_urls = [f'https://huggingface.co/papers?date={k}' for k in dates_urls]
+    print(dates_urls)
     all_articals = [find_articles(i) for i in dates_urls]
     for day_articals in all_articals:
         download_papers(day_articals,to_path)
